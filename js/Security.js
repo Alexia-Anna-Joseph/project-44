@@ -24,6 +24,8 @@ class Security {
         this.button1.position(120,110);
         this.button2.position(700,210);
         this.button3.position(100,310);
+
+       
         
         this.button1.mousePressed(()=>{
             if(system.authenticate(accessCode1,this.access1.value())){
@@ -44,10 +46,11 @@ class Security {
      });
 
      this.button3.mousePressed(()=>{
+       
         if(system.authenticate(accessCode3,this.access3.value())){
             this.button3.hide();
             this.access3.hide();
-            score++;
+             score++;
     }
 
      });

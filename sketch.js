@@ -21,16 +21,16 @@ function draw() {
 
   textSize(18);
   text("Score : "+score,500,40);
-  fill("white");
+  fill("GOLD");
   
   if(score === 3){
     clear();
     background(bg2);
-    fill("black");
+    fill("GOLD");
     textSize(40);
-    text("TREASURE UNLOCKED",250,200);
+    text("TREASURE UNLOCKED!!!",250,200);
   }
-    scary.play();
+  //  scary.play();
   
   drawSprites();
 }
